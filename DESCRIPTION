@@ -1,0 +1,18 @@
+Package: dmlReviewScore
+Title: Scores phrases in reviews based on frequency and review stars.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Michael", "Lisa", , "dmichaellisa@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Takes reviews with star ratings and creates a score based on the frequency and positivity of reviews for phrases. Phrases that are commonly found in positive reviews will receive high scores, while phrases that frequently appear in negative reviews will have low scores. This can be useful to gain insight on important information that reviewers are happy or dissatisfied with.
+Imports:
+  dplyr,
+  parallel,
+  doParallel,
+  foreach,
+  tidytext
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
